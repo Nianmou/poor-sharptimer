@@ -283,7 +283,7 @@ namespace SharpTimer
         public Dictionary<int, string>? StageVelos { get; set; }
     }
 
-    // Trigger push
+    // °â»úÍÆÁ¦
     public class TriggerPushData(float pushSpeed, QAngle pushEntitySpace, Vector pushDirEntitySpace, Vector pushMins, Vector pushMaxs)
     {
         public float PushSpeed { get; set; } = pushSpeed;

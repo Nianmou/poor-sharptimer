@@ -25,7 +25,7 @@ namespace SharpTimer
             {
                 if (activator == null || caller == null)
                 {
-                    SharpTimerDebug("Null reference detected in trigger_multiple OnStartTouch hook.");
+                    SharpTimerDebug("在触发多个 On Start Touch 钩子时检测到空引用.");
                     return HookResult.Continue;
                 }
 

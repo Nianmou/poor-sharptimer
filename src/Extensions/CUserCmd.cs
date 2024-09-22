@@ -57,7 +57,7 @@ public class CUserCmd
 
         nint inputs = Unsafe.Read<IntPtr>((void*)(Handle + 0x50));
         
-        // System.Console.WriteLine(moveMent); // Use this to see the value of the button you are pressing
+        // System.Console.WriteLine(moveMent); // 使用它来查看你按下的按钮的值
 
         var binary = Convert.ToString(inputs, 2);
         binary = binary.PadLeft(64, '0');

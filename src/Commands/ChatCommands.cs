@@ -127,7 +127,7 @@ namespace SharpTimer
             _ = Task.Run(async () => await ReplayHandler(player, playerSlot, "1"));
         }
 
-        [ConsoleCommand("css_replaypb", "Replay your last pb")]
+        [ConsoleCommand("css_replaypb", "重播你的最后一个 pb")]
         [CommandHelper(whoCanExecute: CommandUsage.CLIENT_ONLY)]
         public void ReplaySelfCommand(CCSPlayerController? player, CommandInfo command)
         {
@@ -148,7 +148,7 @@ namespace SharpTimer
             _ = Task.Run(async () => await ReplayHandler(player, playerSlot, "self", steamID, playerName, 0, playerTimers[playerSlot].currentStyle));
         }
 
-        [ConsoleCommand("css_replaysr", "Replay server map record")]
+        [ConsoleCommand("css_replaysr", "重放服务器映射记录")]
         [CommandHelper(whoCanExecute: CommandUsage.CLIENT_ONLY)]
         public void ReplaySRCommand(CCSPlayerController? player, CommandInfo command)
         {
@@ -167,7 +167,7 @@ namespace SharpTimer
             _ = Task.Run(async () => await ReplayHandler(player, playerSlot, "1", "69", "unknown", 0, playerTimers[playerSlot].currentStyle));
         }
 
-        [ConsoleCommand("css_replaytop", "Replay a top 10 server map record")]
+        [ConsoleCommand("css_replaytop", "重播前 10 名服务器地图记录")]
         [CommandHelper(minArgs: 1, usage: "[1-10]", whoCanExecute: CommandUsage.CLIENT_ONLY)]
         public void ReplayTop10SRCommand(CCSPlayerController? player, CommandInfo command)
         {
